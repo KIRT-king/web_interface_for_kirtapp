@@ -1,0 +1,202 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Кнопка переключения темы */
+.theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #f39c12;
+}
+
+/* Светлая тема */
+body.light-theme {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+body.light-theme .theme-toggle {
+    color: black;
+}
+
+/* Уведомление об успешном входе */
+.notification {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2ecc71;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: top 0.5s;
+}
+
+.notification.show {
+    top: 20px;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Форма поиска */
+#content div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Кнопка */
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.searchButtonclass {
+    width: 120px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Таблица */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Выделение столбцов */
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.light-theme th {
+    background-color: #ddd;
+    color: black;
+}
+
+body.light-theme td {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Ошибка */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Поле и кнопка "Последние пользователи" */
+#latestUsersSection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+#latestInput {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#latestUsersSection button {
+    width: 120px;
+    height: 50px;
+    /* padding: 10px 15px; */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#latestUsersSection button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Контейнер для кнопки Log Out */
+.logout-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Стили для кнопки Log Out */
+#logoutButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Увеличенный размер */
+    font-size: 20px; /* Крупный шрифт */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект при наведении */
+#logoutButton:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
