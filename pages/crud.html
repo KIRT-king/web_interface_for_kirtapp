@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Search</title>
+    <link rel="stylesheet" href="crud_style.css">
+</head>
+<body onload="checkAdmin()">
+    <div class="logout-container">
+        <button id="logoutButton" onclick="logout()">Log Out</button>
+    </div>
+    
+    <div id="content" style="display: none;">
+        <h1>User Search</h1>
+        <div>
+            <input type="text" id="nameInput" placeholder="Enter name" />
+            <input type="text" id="emailInput" placeholder="Enter email" />
+            <input type="text" id="phoneInput" placeholder="Enter phone number" />
+            <button class="searchButtonclass" id="searchButton" onclick="searchUsers()">Search</button>
+        </div>
+        <p class="error" id="errorMessage"></p>
+        <div id="latestUsersSection">
+            <input type="number" id="latestInput" placeholder="Enter number of users" min="1" />
+            <button id="latestButton" onclick="getLatestUsers()">Show Latest Users</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Name</th>
+                    <th>Lastname</th>
+                    <th>Post</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Last Check</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody"></tbody>
+        </table>
+    </div>
+    <script src="crud_script.js"></script>
+</body>
+</html>
