@@ -1,8 +1,8 @@
 from typing import List, Optional
 from fastapi import APIRouter, HTTPException
 
-from web_interface_for_kirtapp.pydantic_models import UserBase
-from web_interface_for_kirtapp.db import commands
+from pydantic_models import UserBase
+from db import commands
 
 router = APIRouter()
 

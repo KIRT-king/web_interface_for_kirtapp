@@ -1,1 +1,1 @@
-postgresql+psycopg2://kirt:12345678@localhost:5252/kirt_a
+postgresql+psycopg2://kirtter:12345678@localhost:5432/kirtt

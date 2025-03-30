@@ -1,8 +1,8 @@
 import secrets
 from typing import Optional
 
-from web_interface_for_kirtapp.db.database import Session
-from web_interface_for_kirtapp.db.models import Admin, SessionModel, User
+from db.database import Session
+from db.models import Admin, SessionModel, User
 
 
 def get_user_by_username(username: str):
